@@ -11,26 +11,26 @@ Run Node App to start server, webpage on localhost:8080 for example dynamic coun
 Set the year, month and day you want to countdown to and then use the individual images served to construct the countdown timer.
 
 ### Days
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D1
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D1
 
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D2
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D2
 
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D3
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=D3
 
 ### Hours
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=H1
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=H1
 
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=H2
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=H2
 
 ### Minutes
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=M1
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=M1
 
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=M2
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=M2
 
 ### Seconds
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=S1
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=S1
 
-http://3ti.me/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=S2
+localhost:8080/countdown?year=xxxx&month=xx&day=xx&hour=xx&minute=xx&digit=S2
 
 ## Tracking pixel
 
