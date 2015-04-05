@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p class="contentArea" contenteditable="true" >Hello world! This is HTML5 Boilerplate.</p>
+        <p class="contentArea" contenteditable="true">Hello world! This is HTML5 Boilerplate.</p>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>function savePage(){localStorage["thisPage"]=document.querySelector("html").innerHTML;return"Simon Matthews, have you saved me?"}$(document).ready(function(){if(localStorage["thisPage"]!==undefined){document.querySelector("html").innerHTML=localStorage["thisPage"]}});$("td").each(function(){$(this).attr("contenteditable","true")});window.onbeforeunload=savePage;</script>
+
+<!--         <script class="controls" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script class="controls">
+        	$('#editableToggleOff').click(function() {
+    			if ($(".contentArea").attr('contenteditable','true'))
+        		$(".contentArea").attr('contenteditable','false');
+    			else ($(".contentArea").attr('contenteditable','true'));
+		    });
+            $('#editableToggleOn').click(function() {
+                if ($(".contentArea").attr('contenteditable','false'))
+                $(".contentArea").attr('contenteditable','true');
+                else ($(".contentArea").attr('contenteditable','false'));
+            });
+            var finished = function() {
+                $('.controls').remove();
+            };
+            // $('#editableRemove').click(function() {
+            //     $('.controls').remove();
+            // });
+        </script> -->
+    </body>
+</html>

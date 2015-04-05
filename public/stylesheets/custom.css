@@ -1,0 +1,10 @@
+.selectedYear,.selectedMonth, .selectedDay, .selectedHour, .selectedMinute, .selectedSecond {
+	color:red;
+}
+[data-action="incrementHours"], [data-action="decrementHours"], [data-action="incrementMinutes"], [data-action="decrementMinutes"]{
+    display:none;
+}
+
+.timepicker .timepicker-picker .table-condensed tr:nth-child(odd){
+	display:none;
+};

@@ -1,0 +1,23 @@
+{
+  "name": "DynamicCounter",
+  "version": "0.0.2",
+  "homepage": "https://github.com/timripley/DynamicCounter",
+  "authors": [
+    "Tim <ripleytim@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "eonasdan-bootstrap-datetimepicker": "~3.1.3",
+    "moment": "~2.8.3"
+  }
+}

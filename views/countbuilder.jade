@@ -1,0 +1,199 @@
+extends layout
+block title
+  | Countdown Builder
+block stylesheets
+      link(rel='stylesheet', href='/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')
+block content
+    .row
+      #datetimepicker.col-sm-4.col-sm-offset-4
+          input.form-control.text-center(type='text', placeholder="Select Date & Time", data-date-format="DD/MM/YYYY HH:mm")
+
+    .row
+
+      br
+
+      #dates.col-sm-6.col-sm-offset-3.text-center(style="display:none;")
+
+        h1 Days
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=D1
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=D2
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=D3                 
+
+        h1 Hours
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=H1
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=H2
+
+        h1 Minutes
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=M1
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=M2
+
+        h1 Seconds
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=S1
+
+        p http://3ti.me/countdown?year=
+          span.selectedYear
+            | 2014
+          | &month=
+          span.selectedMonth
+            | 12
+          | &day=
+          span.selectedDay
+            | 25
+          | &hour=
+          span.selectedHour
+            | 00
+          | &minute=
+          span.selectedMinute
+            | 00
+          | &digit=S2
+
+block scripts
+  script(src='/components/moment/min/moment.min.js')
+  script(src='/components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')
+  script(type='text/javascript').
+    var datePicked;
+
+    $(function(){$('#datetimepicker').datetimepicker({use24hours: true, minuteStepping:15})});
+    $("#datetimepicker").change(function () {
+      datePicked = ($('#datetimepicker').data("DateTimePicker").getDate());
+      $("#dates").show();
+      var selectedYear = datePicked.format("YYYY");
+      var selectedMonth = datePicked.format("MM");
+      var selectedDay = datePicked.format("DD");
+      var selectedHour = datePicked.format("HH");
+      var selectedMinute = datePicked.format("mm");
+      $( ".selectedYear" ).html(selectedYear);
+      $( ".selectedMonth" ).html(selectedMonth);      
+      $( ".selectedDay" ).html(selectedDay);
+      $( ".selectedHour" ).html(selectedHour);
+      $( ".selectedMinute" ).html(selectedMinute);
+      $('#datetimepicker').data("DateTimePicker").hide();   
+      });
